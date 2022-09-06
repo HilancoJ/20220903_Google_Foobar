@@ -56,15 +56,15 @@ def get_version(e):
     v = Version()        
 
     # Assign the major, minor and revision numbers.
-    if (e.count(".") == 0):
+    if (e.count(".") == 0 and len(e) >= 1):
         v.major = int(e)
         v.minor = 0
         v.revision = 0
-    elif (e.count(".") == 1):
+    elif (e.count(".") == 1 and len(e) >= 3):
         v.major = int(e[0:e.find(".")])
         v.minor = int(e[len(str(v.major))+1:])
         v.revision = 0
-    elif (e.count(".") == 2):
+    elif (e.count(".") == 2 and len(e) >= 5):
         v.major = int(e[0:e.find(".")])
         v.minor = int(e[(len(str(v.major))+1):e.find(".",len(str(v.major))+1)])
         v.revision = int(e[(len(str(v.major))+len(str(v.minor))+2):])
