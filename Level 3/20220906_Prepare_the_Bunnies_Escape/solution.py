@@ -90,7 +90,6 @@ def solution(map):
 
 
 
-
 # Create all of the potential maps.
 def create_maps(class_Map, map, class_Bunny):
 
@@ -134,7 +133,6 @@ def create_maps(class_Map, map, class_Bunny):
 
 
 
-
 # Determine the number of valid "options/moves" and their locations (Up, Down, Left, Right).
 def determine_options(map, entity):
 
@@ -167,7 +165,6 @@ def determine_options(map, entity):
         if ((entity.x+1 <= map.w and map.m[entity.y][entity.x+1] == 0)):
             entity.r = entity.x+1
             entity.options += 1
-
 
 
 
@@ -204,7 +201,6 @@ def create_bunny(class_Bunny, bunny_list, bunny):
             bunny.r = None
             bunny.options -= 1
             continue
-
 
 
 
@@ -248,7 +244,6 @@ def move_bunny(map, bunny):
 
 
 
-
 # Remove any duplicate entities.
 def merge_bunny(map, bunny_list):
 
@@ -288,8 +283,6 @@ def merge_bunny(map, bunny_list):
 
 
 
-m = [[0, 1, 1, 0], [0, 0, 0, 1], [1, 1, 0, 0], [1, 1, 1, 0]]
-print(solution(m))
 
-m = [[0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0]]
-print(solution(m))
+print(solution([[0, 1, 1, 0], [0, 0, 0, 1], [1, 1, 0, 0], [1, 1, 1, 0]]))
+print(solution([[0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0]]))

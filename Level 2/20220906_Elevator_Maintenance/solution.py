@@ -42,6 +42,7 @@ def solution(l):
     return l
 
 
+
 def get_version(e):
 
     # Create a class representing the elevator version numbers.
@@ -75,19 +76,6 @@ def get_version(e):
 
 
 
-l = ["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"]
-# ["1.0", "1.0.2", "1.0.12", "1.1.2", "1.3.3"]
-print(l)
-print(solution(l))
 
-l = ["1.11", "2.0.0", "1.2", "2", "0.1", "1.2.1", "1.1.1", "2.0"]
-# 0.1, 1.1.1, 1.2, 1.2.1, 1.11, 2, 2.0, 2.0.0
-print("\n")
-print(l)
-print(solution(l))
-
-l = ["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"]
-# 1.0, 1.0.2, 1.0.12, 1.1.2, 1.3.3
-print("\n")
-print(l)
-print(solution(l))
+print(solution(["1.11", "2.0.0", "1.2", "2", "0.1", "1.2.1", "1.1.1", "2.0"]))
+print(solution(["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"]))

@@ -27,10 +27,7 @@ def solution(area):
     return solar_panels
 
 
-print(solution(12))
+
+
 print(solution(15324))
-print(solution(1))
-print(solution(1000000))
-print(solution(1000001234))
-print(solution(-12))
-print(solution(100041200546846348348684351633435334))
+print(solution(12))

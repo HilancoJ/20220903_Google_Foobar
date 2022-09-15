@@ -27,13 +27,7 @@ def solution(x, y):
     return str(worker_id)
 
 
-print(solution(1, 1)) # 1
-print(solution(1, 2)) # 2
-print(solution(2, 1)) # 3
-print(solution(2, 3)) # 8
-print(solution(3, 2)) # 9
-print(solution(6, 6)) # 61
+
+
 print(solution(5, 10)) # 96
-print(solution(320, 99999)) # 5031800723
-print(solution(-12, 5))
-print(solution(100000, 100001))
+print(solution(3, 2)) # 9
