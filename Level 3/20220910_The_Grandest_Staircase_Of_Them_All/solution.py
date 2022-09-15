@@ -38,17 +38,9 @@ def solution(n):
                 
     # Remove one combination from the result since the base case is an invalid combination which has been transferred to all other step heights.
     return staircase_combinations[n][n]-1
-    
 
+
+
+
+print(solution(200)) # 487067745
 print(solution(3)) # 1
-print(solution(4)) # 1
-print(solution(5)) # 2
-print(solution(6)) # 3
-print(solution(7)) # 4
-print(solution(9)) # 7
-print(solution(10)) # 9
-print(solution(12)) # 14
-print(solution(15)) ## 26
-print(solution(20)) ## 63
-print(solution(30)) ## 295
-print(solution(200)) ## 487067745

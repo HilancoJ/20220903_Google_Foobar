@@ -16,7 +16,6 @@ def solution(n):
 
 
 
-
 def find_all_stairways_to_heaven(total_bricks, step_max_height=None, extend_staircase=[]):
 
     # If no maximum step height has been supplied, use the total number of bricks.
@@ -52,7 +51,6 @@ def find_all_stairways_to_heaven(total_bricks, step_max_height=None, extend_stai
 
         # Determine the maximum number bricks a specific height could fill. Tn = 0.5(n^2 - n)
         bricks_max = int((0.5)*(staircase[0]*staircase[0] - staircase[0]))
-        # print 'bricks_max' ,bricks_max, sum(staircase[1:]), int((0.5)*(staircase[0]*staircase[0] - staircase[0]))
 
         # Can the current staircase configuration create more staircases.
         if (bricks_max > sum(staircase[1:])):
@@ -97,7 +95,6 @@ def find_all_stairways_to_heaven(total_bricks, step_max_height=None, extend_stai
 
 
 
-
 # Build a staircase.
 def build_staircase_brick_by_brick(total_bricks, step_max_height):
 
@@ -114,7 +111,6 @@ def build_staircase_brick_by_brick(total_bricks, step_max_height):
         staircase.extend(build_staircase_brick_by_brick(total_bricks=total_bricks-step_max_height, step_max_height=next_step_max_height))
 
     return staircase
-
 
 
 
@@ -135,18 +131,5 @@ def determine_sub_staircases(staircase):
 
 
 
-# print(solution(3)) # 1
-# print(solution(4)) # 1
-# print(solution(5)) # 2
-# print(solution(6)) # 3
-# print(solution(7)) # 4
-# print(solution(9)) # 7
-# print(solution(10)) # 9
-# print(solution(12)) # 14
-# print(solution(15)) ## 26
-# print(solution(20)) ## 63
-print(solution(30)) ## 295
-# print(solution(100)) ## 444792
-# print(solution(120)) ## 2194431
-# print(solution(150)) ## 19406015 
-# print(solution(200)) # 487067745
+print(solution(9))
+# print(solution(30))
