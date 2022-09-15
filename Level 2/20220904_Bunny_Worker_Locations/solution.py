@@ -1,4 +1,5 @@
 def solution(x, y):
+    
     # Restrict the number of Worker Cells.
     if ((x < 1 or x > 100000) or (y < 1 or y > 100000)):
         return "The co-ordinates of the cell location (x, y) must be between 1 and 100000 (inclusive)."

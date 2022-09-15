@@ -1,6 +1,7 @@
 import math
 
 def solution(area):
+    
     # Restrict the scope of the total solar panel area.
     if (area != 0 and (area < 1 or area > 1000000)):
         return "The total area of solar panels must be between 1 and 1000000 (inclusive)."
